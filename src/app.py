@@ -309,7 +309,7 @@ async def bedwars_stats(uuid: str, api_key: str):
         )
     
 
-    
+    slumber_tickets_max = 0
     if bedwars_data.get("slumber", {}).get("bag_type", None) == "MINI_WALLET":
         slumber_tickets_max = 25
     elif bedwars_data.get("slumber", {}).get("bag_type", None) == "LIGHT_SLUMBERS_WALLET":
